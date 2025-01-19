@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MojiBoard v1.0</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MojiBoard <span class="version">v1.0</span></h1>
+            <div class="header-controls">
+                <button id="langToggle" class="lang-toggle">
+                    <i class="fas fa-globe"></i>
+                    <span>TR</span>
+                </button>
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-sun light-icon"></i>
+                    <i class="fas fa-moon dark-icon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="searchInput" placeholder="Emoji ara..." data-placeholder-tr="Emoji ara..." data-placeholder-en="Search emoji...">
+        </div>
+        <div id="emojiContainer" class="emoji-container"></div>
+        <div id="notification" class="notification">
+            <i class="fas fa-check"></i> <span class="lang-tr">Emoji kopyalandı!</span><span class="lang-en">Emoji copied!</span>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>
+                        <span class="lang-tr">Hakkında</span>
+                        <span class="lang-en">About</span>
+                    </h3>
+                    <p class="lang-tr">
+                        MojiBoard, emojileri hızlıca bulmanızı ve kopyalamanızı sağlayan basit bir araçtır. 
+                        Arama yapabilir ve tek tıkla kopyalayabilirsiniz.
+                    </p>
+                    <p class="lang-en">
+                        MojiBoard is a simple tool that helps you find and copy emojis quickly. 
+                        You can search and copy with a single click.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>
+                        <span class="lang-tr">Özellikler</span>
+                        <span class="lang-en">Features</span>
+                    </h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-search"></i>
+                            <span class="lang-tr">Emoji Arama</span>
+                            <span class="lang-en">Emoji Search</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-moon"></i>
+                            <span class="lang-tr">Koyu/Açık Tema</span>
+                            <span class="lang-en">Dark/Light Theme</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <span class="lang-tr">Türkçe/İngilizce</span>
+                            <span class="lang-en">Turkish/English</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>
+                        <span class="lang-tr">İletişim</span>
+                        <span class="lang-en">Contact</span>
+                    </h3>
+                    <div class="social-links">
+                        <a href="https://github.com/serhatparsinfinity" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:serhatpars@umaylabs.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 MojiBoard v1.0 - Developed by <a href="https://github.com/serhatparsinfinity" target="_blank">Serhat Pars</a></p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
